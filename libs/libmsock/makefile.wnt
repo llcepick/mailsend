@@ -6,7 +6,7 @@
 CC= cl /MD
 OPENSSL_DIR=c:\openssl
 OPENSSL_INC=-I$(OPENSSL_DIR)/include
-OPENSSL_LIBS=$(OPENSSL_DIR)/lib/libeay32.lib $(OPENSSL_DIR)/lib/ssleay32.lib
+OPENSSL_LIBS=$(OPENSSL_DIR)/lib/libssl.lib $(OPENSSL_DIR)/lib/libcrypto.lib
 
 DEFS=  -DWINNT=1 -DSTRICT_MODE=1 -DHAVE_STRING_H=1 -DHAVE_FCNTL_H=1 -DHAVE_OPENSSL=1
 
