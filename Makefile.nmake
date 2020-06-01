@@ -36,23 +36,23 @@ $(PROGNAME) : LIBRARIES $(OBJS)
 
 LIBRARIES:
 	cd libs\libsll
-	nmake -f Makefile.nmake
+	nmake -nologo -f Makefile.nmake
 	cd ..\..
 	cd libs\libmsock
-	nmake -f Makefile.nmake
+	nmake -nologo -f Makefile.nmake
 	cd ..\..
 	cd libs\libmutils
-	nmake -f Makefile.nmake
+	nmake -nologo -f Makefile.nmake
 	cd ..\..
 
 clean:
 	del $(OBJS) $(PROGNAME)
 	cd libs\libsll
-	nmake -f Makefile.nmake clean
+	nmake -nologo -f Makefile.nmake clean
 	cd ..\..
 	cd libs\libmsock
-	nmake -f Makefile.nmake clean
+	nmake -nologo -f Makefile.nmake clean
 	cd ..\..
 	cd libs\libmutils
-	nmake -f Makefile.nmake clean
+	nmake -nologo -f Makefile.nmake clean
 	cd ..\..

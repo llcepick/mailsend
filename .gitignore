@@ -10,3 +10,7 @@ mailsend.exe
 *.lib
 *.deb
 *.gz
+mailsend.VC.VC.opendb
+mailsend.VC.db
+mailsend.log
+Debug/**

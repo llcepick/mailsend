@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\libs">
+      <UniqueIdentifier>{6f92b7a3-a4f5-4ee9-8999-d207ab50c9c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libs\libsll">
+      <UniqueIdentifier>{01e5c8ad-b115-4f3c-bda8-93dd009745c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libs\libmutils">
+      <UniqueIdentifier>{2a4b3cb5-5b32-4574-b3ab-bec9d3eb9bf0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libs\libmsock">
+      <UniqueIdentifier>{f38c7ae3-601a-4822-857b-8e452a762b37}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="copyright.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mailsend.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mime_types.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\libsll\sll.h">
+      <Filter>Source Files\libs\libsll</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\libmutils\mutils.h">
+      <Filter>Source Files\libs\libmutils</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\libmsock\msock.h">
+      <Filter>Source Files\libs\libmsock</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\libmsock\werrno.h">
+      <Filter>Source Files\libs\libmsock</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="examples.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="setget.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="smtp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\libsll\sll.c">
+      <Filter>Source Files\libs\libsll</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\libmutils\md5test.c">
+      <Filter>Source Files\libs\libmutils</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\libmutils\mutils.c">
+      <Filter>Source Files\libs\libmutils</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\libmutils\mutils_blob.c">
+      <Filter>Source Files\libs\libmutils</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\libmutils\mutils_error.c">
+      <Filter>Source Files\libs\libmutils</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\libmutils\mutils_mime.c">
+      <Filter>Source Files\libs\libmutils</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\libmutils\mutils_temp.c">
+      <Filter>Source Files\libs\libmutils</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\libmutils\mutils_time.c">
+      <Filter>Source Files\libs\libmutils</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\libmutils\string.c">
+      <Filter>Source Files\libs\libmutils</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\libmutils\test.c">
+      <Filter>Source Files\libs\libmutils</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\libmutils\testb64.c">
+      <Filter>Source Files\libs\libmutils</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\libmsock\msock.c">
+      <Filter>Source Files\libs\libmsock</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile.nmake" />
+    <None Include="libs\libsll\Makefile.nmake">
+      <Filter>Source Files\libs\libsll</Filter>
+    </None>
+    <None Include="libs\libmsock\Makefile.nmake">
+      <Filter>Source Files\libs\libmsock</Filter>
+    </None>
+  </ItemGroup>
+</Project>
