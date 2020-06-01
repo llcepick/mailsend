@@ -1,0 +1,9 @@
+This is a normal line
+This is a line with only CR on endThis is two away
+
+
+This is three away
+This is two away
+This is one away
+
+This is three away

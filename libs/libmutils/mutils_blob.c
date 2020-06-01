@@ -160,7 +160,7 @@ MutilsBlob *mutils_file_to_blob(char *filename)
     if (filename == NULL)
         return(NULL);
 
-    fd=open(filename,O_RDONLY | O_BINARY);
+    fd=open(filename,_O_RDONLY | _O_BINARY);
     if (fd == -1)
     {
         (void) fprintf(stderr,"Unable to open file %s\n",filename);

@@ -257,9 +257,9 @@ int main(int argc,char **argv)
     /* (void) strcpy(g_content_transfer_encoding,"base64"); */ /* no default */
     (void) strcpy(g_content_disposition,"attachment");
     (void) strcpy(g_attach_sep,",");
-    (void) strcpy(g_charset,DEFAULT_CHARSET);
+    (void) strcpy(g_charset, MS_DEFAULT_CHARSET);
     /*
-        No default for mime_type, we will detect from file extensinon
+        No default for mime_type, we will detect from file extension
         if no mime type is specified with -mime-type
     */
     /*
@@ -568,7 +568,7 @@ int main(int argc,char **argv)
                         i++;
                         if (i == argc)
                         {
-                            errorMsg("Missing content dispostion value");
+                            errorMsg("Missing content disposition value");
                             rc = 1;
                             goto ExitProcessing;
                         }
@@ -629,7 +629,7 @@ int main(int argc,char **argv)
                         i++;
                         if (i == argc)
                         {
-                            errorMsg("Missing image for -embded-image");
+                            errorMsg("Missing image for -embed-image");
                             rc = 1;
                             goto ExitProcessing;
                         }
@@ -1093,7 +1093,7 @@ int main(int argc,char **argv)
 
                         /* add addresses to a singly linked list */
                         addAddressToList(to,"To");
-                        /* Note: to is modifed now! */
+                        /* Note: to is modified now! */
                     }
                 }
                 break;

@@ -146,7 +146,7 @@ do \
 #define ENCODE_QUOTED_PRINTABLE 0x04
 #define ENCODE_NONE             0x05
 
-#define DEFAULT_CHARSET "utf-8"
+#define MS_DEFAULT_CHARSET "utf-8"
 
 EXTERN int  g_verbose;
 EXTERN int  g_connect_timeout;

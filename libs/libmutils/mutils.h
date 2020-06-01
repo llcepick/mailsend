@@ -106,10 +106,6 @@ vile)*/
 #define MUTILS_PATH_MAX  4098
 #endif
 
-#if !defined(O_BINARY)
-#define O_BINARY  0x00
-#endif
-
 #define MUTILS_TRUE   1
 #define MUTILS_FALSE  0
 
