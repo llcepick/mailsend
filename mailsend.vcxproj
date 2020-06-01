@@ -48,11 +48,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="libs\libmsock\Makefile.nmake" />
+    <None Include="libs\libmutils\Makefile.nmake" />
     <None Include="libs\libsll\Makefile.nmake" />
     <None Include="Makefile.nmake" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{467F757E-5936-45EB-B969-20689CC382F8}</ProjectGuid>
+    <ProjectGuid>{23C68751-A779-4E9F-AD9E-DDF1B9AD819E}</ProjectGuid>
     <Keyword>MakeFileProj</Keyword>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -95,32 +96,20 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <NMakeBuildCommandLine>call vsvars32.bat
-nmake -f makefile.nmake</NMakeBuildCommandLine>
-    <NMakeOutput>$(SolutionDir)mailsend.exe</NMakeOutput>
-    <NMakeCleanCommandLine>call vsvars32.bat
-nmake -f makefile.nmake clean</NMakeCleanCommandLine>
-    <NMakeReBuildCommandLine>call vsvars32.bat
-nmake -f makefile.nmake clean all</NMakeReBuildCommandLine>
+    <NMakeBuildCommandLine>call "$(VS140COMNTOOLS)\vsvars32.bat"
+nmake /f makefile.nmake </NMakeBuildCommandLine>
+    <NMakeOutput>mailsend.exe</NMakeOutput>
+    <NMakeCleanCommandLine>nmake /f makefile.nmake clean</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>nmake /f makefile.nmake clean all</NMakeReBuildCommandLine>
     <NMakePreprocessorDefinitions>WIN32;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
-    <OutDir>$(SolutionDir)</OutDir>
-    <IntDir>$(SolutionDir)</IntDir>
-    <NMakeIncludeSearchPath>$(SolutionDir);C:\openssl\include\;C:\openssl\include\OpenSSL\;$(SolutionDir)libs\libsll\;$(SolutionDir)libs\libmutils\;$(SolutionDir)libs\libmsock\;$(IncludePath)</NMakeIncludeSearchPath>
-    <IncludePath>C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\ucrt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\shared</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <NMakeBuildCommandLine>call vsvars32.bat
-nmake -f makefile.nmake</NMakeBuildCommandLine>
-    <NMakeOutput>$(SolutionDir)mailsend.exe</NMakeOutput>
-    <NMakeCleanCommandLine>call vsvars32.bat
-nmake -f makefile.nmake clean</NMakeCleanCommandLine>
-    <NMakeReBuildCommandLine>call vsvars32.bat
-nmake -f makefile.nmake clean all</NMakeReBuildCommandLine>
+    <NMakeBuildCommandLine>call "$(VS140COMNTOOLS)\vsvars32.bat"
+nmake /f makefile.nmake </NMakeBuildCommandLine>
+    <NMakeOutput>mailsend.exe</NMakeOutput>
+    <NMakeCleanCommandLine>nmake /f makefile.nmake clean</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>nmake /f makefile.nmake clean all</NMakeReBuildCommandLine>
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
-    <OutDir>$(SolutionDir)</OutDir>
-    <IntDir>$(SolutionDir)</IntDir>
-    <NMakeIncludeSearchPath>$(SolutionDir);C:\openssl\include\;C:\openssl\include\OpenSSL\;$(SolutionDir)libs\libsll\;$(SolutionDir)libs\libmutils\;$(SolutionDir)libs\libmsock\;$(IncludePath)</NMakeIncludeSearchPath>
-    <IncludePath>C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\ucrt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.14393.0\shared</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup>
   </ItemDefinitionGroup>

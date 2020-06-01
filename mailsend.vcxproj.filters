@@ -13,17 +13,17 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source Files\libs">
-      <UniqueIdentifier>{6f92b7a3-a4f5-4ee9-8999-d207ab50c9c8}</UniqueIdentifier>
+    <Filter Include="libs">
+      <UniqueIdentifier>{469df607-e618-4177-a674-0cc2c384defb}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\libs\libsll">
-      <UniqueIdentifier>{01e5c8ad-b115-4f3c-bda8-93dd009745c3}</UniqueIdentifier>
+    <Filter Include="libs\libmsock">
+      <UniqueIdentifier>{ddc64531-ce92-4758-8a94-fa83f5e23341}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\libs\libmutils">
-      <UniqueIdentifier>{2a4b3cb5-5b32-4574-b3ab-bec9d3eb9bf0}</UniqueIdentifier>
+    <Filter Include="libs\libmutils">
+      <UniqueIdentifier>{2fedbeda-d833-44fc-bc0b-2729d43ed0be}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\libs\libmsock">
-      <UniqueIdentifier>{f38c7ae3-601a-4822-857b-8e452a762b37}</UniqueIdentifier>
+    <Filter Include="libs\libsll">
+      <UniqueIdentifier>{200a2479-e616-462f-8884-cec5b41cb7f6}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -36,17 +36,17 @@
     <ClInclude Include="mime_types.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="libs\libsll\sll.h">
-      <Filter>Source Files\libs\libsll</Filter>
-    </ClInclude>
-    <ClInclude Include="libs\libmutils\mutils.h">
-      <Filter>Source Files\libs\libmutils</Filter>
-    </ClInclude>
     <ClInclude Include="libs\libmsock\msock.h">
-      <Filter>Source Files\libs\libmsock</Filter>
+      <Filter>libs\libmsock</Filter>
     </ClInclude>
     <ClInclude Include="libs\libmsock\werrno.h">
-      <Filter>Source Files\libs\libmsock</Filter>
+      <Filter>libs\libmsock</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\libmutils\mutils.h">
+      <Filter>libs\libmutils</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\libsll\sll.h">
+      <Filter>libs\libsll</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -65,50 +65,55 @@
     <ClCompile Include="utils.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="libs\libsll\sll.c">
-      <Filter>Source Files\libs\libsll</Filter>
+    <ClCompile Include="libs\libmsock\msock.c">
+      <Filter>libs\libmsock</Filter>
     </ClCompile>
     <ClCompile Include="libs\libmutils\md5test.c">
-      <Filter>Source Files\libs\libmutils</Filter>
+      <Filter>libs\libmutils</Filter>
     </ClCompile>
     <ClCompile Include="libs\libmutils\mutils.c">
-      <Filter>Source Files\libs\libmutils</Filter>
+      <Filter>libs\libmutils</Filter>
     </ClCompile>
     <ClCompile Include="libs\libmutils\mutils_blob.c">
-      <Filter>Source Files\libs\libmutils</Filter>
+      <Filter>libs\libmutils</Filter>
     </ClCompile>
     <ClCompile Include="libs\libmutils\mutils_error.c">
-      <Filter>Source Files\libs\libmutils</Filter>
+      <Filter>libs\libmutils</Filter>
     </ClCompile>
     <ClCompile Include="libs\libmutils\mutils_mime.c">
-      <Filter>Source Files\libs\libmutils</Filter>
+      <Filter>libs\libmutils</Filter>
     </ClCompile>
     <ClCompile Include="libs\libmutils\mutils_temp.c">
-      <Filter>Source Files\libs\libmutils</Filter>
+      <Filter>libs\libmutils</Filter>
     </ClCompile>
     <ClCompile Include="libs\libmutils\mutils_time.c">
-      <Filter>Source Files\libs\libmutils</Filter>
+      <Filter>libs\libmutils</Filter>
     </ClCompile>
     <ClCompile Include="libs\libmutils\string.c">
-      <Filter>Source Files\libs\libmutils</Filter>
+      <Filter>libs\libmutils</Filter>
     </ClCompile>
     <ClCompile Include="libs\libmutils\test.c">
-      <Filter>Source Files\libs\libmutils</Filter>
+      <Filter>libs\libmutils</Filter>
     </ClCompile>
     <ClCompile Include="libs\libmutils\testb64.c">
-      <Filter>Source Files\libs\libmutils</Filter>
+      <Filter>libs\libmutils</Filter>
     </ClCompile>
-    <ClCompile Include="libs\libmsock\msock.c">
-      <Filter>Source Files\libs\libmsock</Filter>
+    <ClCompile Include="libs\libsll\sll.c">
+      <Filter>libs\libsll</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Makefile.nmake" />
-    <None Include="libs\libsll\Makefile.nmake">
-      <Filter>Source Files\libs\libsll</Filter>
+    <None Include="Makefile.nmake">
+      <Filter>Source Files</Filter>
     </None>
     <None Include="libs\libmsock\Makefile.nmake">
-      <Filter>Source Files\libs\libmsock</Filter>
+      <Filter>libs\libmsock</Filter>
+    </None>
+    <None Include="libs\libmutils\Makefile.nmake">
+      <Filter>libs\libmutils</Filter>
+    </None>
+    <None Include="libs\libsll\Makefile.nmake">
+      <Filter>libs\libsll</Filter>
     </None>
   </ItemGroup>
 </Project>
