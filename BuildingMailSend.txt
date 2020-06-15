@@ -1,0 +1,15 @@
+ Building mailsend - for XP and up
+ 
+ First need to build openssl:
+   
+"%VS140COMNTOOLS%\vsvars32.bat"
+Put nasm in PATH (https://nasm.us/)
+- i.e. set PATH=%PATH%;C:\DevStudio\Tools\nasm
+Then run following in openssl folder:
+- perl Configure VC-WIN32 no-shared -D_WIN32_WINNT=0x0501 -DWINVER=0x501 --prefix=c:\openssl 
+- nmake
+- nmake test
+- nmake install
+Build the mailsend project with
+- cd ..\mailsend
+- nmake -f makefile.nmake
